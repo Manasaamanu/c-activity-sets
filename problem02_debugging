@@ -1,0 +1,50 @@
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets> cd set01
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gcc problem02.exe
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x2a0): multiple definition of `_mingw32_init_mainargs'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x2a0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x2e0): multiple definition of `mainCRTStartup'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x2e0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x300): multiple definition of `WinMainCRTStartup'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x300): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x320): multiple definition of `atexit'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x320): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x330): multiple definition of `_onexit'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.text+0x330): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x340): multiple definition of `__gcc_register_frame'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.text+0x430): multiple definition of `__gcc_deregister_frame'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0xf0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.bss+0x4): multiple definition of `_argc'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.bss+0x4): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.bss+0x0): multiple definition of `_argv'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o:(.bss+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: Dwarf Error: Could not find abbrev number 84.
+problem02.exe:cygming-crtbegin.c:(.eh_frame+0xb8): multiple definition of `__EH_FRAME_BEGIN__'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.eh_frame+0x0): first defined here
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o:cygming-crtbegin.c:(.text+0x92): undefined reference to `_Jv_RegisterClasses'
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gdb
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) r
+Starting program:
+No executable specified, use `target exec'.
+(gdb) n
+The program is not being run.
+(gdb) quit 
