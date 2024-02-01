@@ -1,3 +1,5 @@
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets> cd set01
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gcc problem11.c
 PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gdb
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
@@ -13,8 +15,3 @@ Starting program:
 No executable specified, use `target exec'.
 (gdb) n
 The program is not being run.
-(gdb) git add.
-Undefined command: "git".  Try "help".
-(gdb) quit
-
-
