@@ -1,0 +1,31 @@
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02\a.exe...done.
+(gdb) r
+Starting program: C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02/a.exe 
+[New Thread 19016.0x3980]
+[New Thread 19016.0x1378]
+Enter the base of trianglenr
+Enter the height of the triangleThe area of the triangle with base 0.000000 and height 0.000000 is 0.000000
+[Inferior 1 (process 19016) exited normally]
+(gdb) rtrr
+Undefined command: "rtrr".  Try "help".
+(gdb) r
+Starting program: C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02/a.exe
+[New Thread 26372.0x4238]
+[New Thread 26372.0x31dc]
+Enter the base of triangle5
+Enter the height of the triangle6
+The area of the triangle with base 5.000000 and height 6.000000 is 15.000000
+[Inferior 1 (process 26372) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) q
