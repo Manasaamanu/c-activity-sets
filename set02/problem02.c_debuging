@@ -1,0 +1,30 @@
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02\a.exe...done.
+(gdb) r
+Starting program: C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02/a.exe 
+[New Thread 22116.0x397c]
+[New Thread 22116.0x5220]
+Enter the side length: n
+Enter the side length: Enter the side length: The triangle with sides 6422476, 6422476 and 6422476 is not scalene
+[Inferior 1 (process 22116) exited normally]
+(gdb) r   
+Starting program: C:\Users\manas\OneDrive\Desktop\c-activity-sets\set02/a.exe
+[New Thread 21444.0xd38]
+[New Thread 21444.0xc98]
+Enter the side length: 17
+Enter the side length: 67
+Enter the side length: 18
+The triangle with sides 17, 67 and 18 is  scalene
+[Inferior 1 (process 21444) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) q
