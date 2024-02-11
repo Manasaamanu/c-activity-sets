@@ -1,4 +1,4 @@
-PS C:\Users\manas\OneDrive\Desktop\c-activity-sets> gdb
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gdb 
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -11,9 +11,8 @@ For bug reporting instructions, please see:
 (gdb) r
 Starting program:
 No executable specified, use `target exec'.
-(gdb) n
-The program is not being run.
 (gdb) b
 No default breakpoint address now.
-(gdb) quit
-
+(gdb) n
+The program is not being run.
+(gdb)
