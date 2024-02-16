@@ -1,39 +1,39 @@
-#include<stdio.h>
-#include<math.h>
-
-int input_n();
-int sum_n_nos(int n);
-void output(int n, int sum);
-
+#include <stdio.h>
+int input();
+void compare(int a,int b,int c,int* largest );
+void output(int a,int b,int c,int largest);
 int main()
 {
-    int n, sum;
-    n = input_n();
-    sum = sum_n_nos(n);
-    output(n, sum);
-    return 0;
+    int a, b,c,largest;
+    a=input();
+    b=input();
+    c=input();
+    compare(a,b,c,&largest);
+    output(a,b,c,largest);
 }
-
-int input_n()
+int input()
 {
-    int n;
-    printf("Enter a number : ");
-    scanf("%d", &n);
-    return n;
+    int x;
+    printf("enter the values\n");
+    scanf("%d",&x);
+    return x;
 }
-
-int sum_n_nos(int n)
+void compare(int a,int b,int c,int *largest )
 {
-    int sum = 0;
-    for (int i=1 ; i<=n ; i++)
-    {
-        sum += i;
-    }
-    return sum;
+  if(a>=b&&a>=c)
+  {
+    *largest=a;
+  }
+  if(b>=a&&b>=c)
+  {
+   
+   *largest=b;
+  }
+  else{
+    *largest=c;
+  }
 }
-
-void output(int n, int sum)
+void output(int a,int b,int c,int largest)
 {
-    printf("The sum is : %d", sum);
+    printf("the largest of %d,%d,%d is %d\n",a,b,c,largest);
 }
-
