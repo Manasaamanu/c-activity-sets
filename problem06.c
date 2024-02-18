@@ -1,6 +1,6 @@
 #include <stdio.h>
 int input();
-void compare(int a,int b,int c,int* largest );
+void compare(int a,int b,int c,int * largest );
 void output(int a,int b,int c,int largest);
 int main()
 {
@@ -14,11 +14,11 @@ int main()
 int input()
 {
     int x;
-    printf("enter the values\n");
+    printf("Enter the values\n");
     scanf("%d",&x);
     return x;
 }
-void compare(int a,int b,int c,int *largest )
+void compare(int a,int b,int c,int * largest)
 {
   if(a>=b&&a>=c)
   {
