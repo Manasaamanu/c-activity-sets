@@ -1,0 +1,25 @@
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01/a.exe
+[New Thread 22760.0x5b58]
+[New Thread 22760.0x23f8]
+Enter the size of array : 45.6
+Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : Enter the array : 1+1+7416496+6422100+1991280501+1991611444+6422112+1991287383+16+6422176+1991344116+0+1991611904+1991344081+2123902113+4199136+4199136+6422256+1+6422132+2123902137+6422476+1991238000+139278233+-2+6422200+1991343960+1991391776+4214911+0+6422212+6422248+4199736+4214911+6422236+1991213437+1991213411+2123902205+4199136+4199136+45+4201184+192+16+4199600The sum is -1539440571[Inferior 1 (process 22760) exited normally]
+(gdb) 56
+Undefined command: "56".  Try "help".
+(gdb) b
+No default breakpoint address now.
+(gdb) n
+The program is not being run.
+(gdb) quit
+PS C:\Users\manas\OneDrive\Desktop\c-activity-sets\set01>

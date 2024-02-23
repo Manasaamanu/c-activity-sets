@@ -1,40 +1,33 @@
 #include<stdio.h>
 struct _complex
-{
+ {
     float real;
     float img;
 };
-typedef struct _complex complex;
-
-  complex input_complex()
-  {
-    complex c;
-    printf("Enter the value for real of c1\n");
-    scanf("%f", &c.real);
-    printf("Enter the value for img of c1\n");
-    scanf("%f", &c.img);
-    return c;
-  }
-  complex add_sum(complex a, complex b)
-  {
-    complex sum;
-    sum.real=a.real+b.real;
-    sum.img=a.img+b.img;
-    return sum;
-  }
-  void output(complex a, complex b, complex sum)
-  {
-    printf("Complex a:%f+%fi\n",a.real,a.img);
-    printf("Complex b:%f+%fi\n",b.real,b.img);
-    printf("Sum: %f + %fi\n", sum.real,sum.img);
-  }
-
-int main()
+struct _complex addComplex(struct _complex num1, struct _complex num2)
+ {
+    struct _complex result;
+    result.real = num1.real + num2.real;
+    result.img = num1.img + num2.img;
+    return result;
+}
+struct _complex subtractComplex(struct _complex num1, struct _complex num2) 
 {
-    complex a,b,sum;
-    a=input_complex();
-    b=input_complex();
-    sum=add_sum(a,b);
-    output(a,b,sum);
+    struct _complex result;
+    result.real = num1.real - num2.real;
+    result.img = num1.img - num2.img;
+    return result;
+}
+int main() {
+    struct _complex num1, num2, result;
+    printf("Enter real and imaginary parts of first complex number: ");
+    scanf("%f %f", &num1.real, &num1.img);
+    printf("Enter real and imaginary parts of second complex number: ");
+    scanf("%f %f", &num2.real, &num2.img);
+    result = addComplex(num1, num2);
+    printf("Sum = %.2f + %.2fi\n", result.real, result.img);
+    result = subtractComplex(num1, num2);
+    printf("Difference = %.2f + %.2fi\n", result.real, result.img);
+    
     return 0;
 }
